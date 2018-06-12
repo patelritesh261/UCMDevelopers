@@ -5,8 +5,8 @@
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -22,3 +22,39 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/* custom css*/
+.gray-filter {
+    background: rgba(101, 47, 142, 0.64);
+    background: linear-gradient(45deg, rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%);
+    background: -moz-linear-gradient(135deg, rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%);
+    background: -webkit-linear-gradient(135deg, rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%);
+}
+@media (min-width: 1200px) {
+    #aboutsection {
+        background-image: url(../Assets/img/about1.jpg);
+        /* Full height */
+        min-height: 768px;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+@media (min-width: 480px) and (max-width: 1199px) {
+
+    #aboutsection {
+        background: rgba(234,234,234,1);
+    }
+}
+#aboutsection h1 {
+    padding-top: 200px;
+    color: #0E173E;
+    font-weight:bolder;
+}
+#aboutsection p {
+    padding-top: 10px;
+    color: #000;
+    font-weight: 200;
+}
+
